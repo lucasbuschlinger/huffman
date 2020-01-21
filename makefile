@@ -1,7 +1,7 @@
-huffmann: huffman.o bitfile.o compress.o decompress.o tree.o
-	gcc -o huffman  huffman.o bitfile.o compress.o decompress.o tree.o
+huffman: huffman.o bitfile.o compress.o decompress.o tree.o
+	gcc -o huffman huffman.o bitfile.o compress.o decompress.o tree.o
  
-huff.o: huffman.c bitfile.o compress.o decompress.o tree.o
+huffman.o: huffman.c bitfile.o compress.o decompress.o tree.o
 	gcc -c huffman.c
 
 bitfile.o: bitfile.c bitfile.h
