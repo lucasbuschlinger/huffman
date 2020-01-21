@@ -1,8 +1,8 @@
-huffmann: huffmann.o bitfile.o compress.o decompress.o tree.o
-	gcc -o huffmann  huffmann.o bitfile.o compress.o decompress.o tree.o
+huffmann: huffman.o bitfile.o compress.o decompress.o tree.o
+	gcc -o huffman  huffman.o bitfile.o compress.o decompress.o tree.o
  
-huff.o: huffmann.c bitfile.o compress.o decompress.o tree.o
-	gcc -c huffmann.c
+huff.o: huffman.c bitfile.o compress.o decompress.o tree.o
+	gcc -c huffman.c
 
 bitfile.o: bitfile.c bitfile.h
 	gcc -c bitfile.c
@@ -18,4 +18,4 @@ tree.o: tree.c tree.h
 
 clean:
 	rm *.o
-	rm huffmann
+	rm huffman
