@@ -1,0 +1,2 @@
+# huffman
+Huffman compressor/decompressor
